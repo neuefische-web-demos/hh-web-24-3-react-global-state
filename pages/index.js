@@ -1,11 +1,24 @@
-import CounterStats from '@/components/CounterStats';
 import Link from 'next/link';
 
 export default function HomePage() {
+  const countAverage = '⚠️';
+  const countSum = '⚠️';
+  const dragonCount = '⚠️';
+
   return (
     <>
-      <h1>The Counter App</h1>
-      <CounterStats />
+      <h1>Counter Stats</h1>
+      <ul>
+        <li>
+          average:<strong>{countAverage}</strong>
+        </li>
+        <li>
+          sum:<strong>{countSum}</strong>
+        </li>
+        <li>
+          dragons:<strong>{dragonCount}</strong>
+        </li>
+      </ul>
       <Link href="/counters">To the counters →</Link>
     </>
   );

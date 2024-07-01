@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 
-const StyledContainer = styled.div`
+const StyledContainer = styled.li`
   display: flex;
   align-items: center;
   gap: 0.5rem;
