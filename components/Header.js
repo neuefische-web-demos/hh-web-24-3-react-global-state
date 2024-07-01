@@ -1,8 +1,6 @@
 import Link from 'next/link';
 
-export default function Header() {
-  const countSum = '📦';
-
+export default function Header({ countSum = '📦' }) {
   return (
     <Link href="/">
       CounterApp
