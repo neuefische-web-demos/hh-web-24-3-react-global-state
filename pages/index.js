@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 export default function HomePage() {
-  const countAverage = '⚠️';
-  const countSum = '⚠️';
-  const dragonCount = '⚠️';
+  const countAverage = '📦';
+  const countSum = '📦';
+  const dragonCount = '📦';
 
   return (
     <main>

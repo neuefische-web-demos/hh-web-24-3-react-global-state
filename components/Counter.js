@@ -4,10 +4,12 @@ import { useState } from 'react';
 const StyledContainer = styled.li`
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 `;
 
 export default function Counter({ animalName }) {
+  // local counter state
+
   const [count, setCount] = useState(0);
 
   function handleAdd() {

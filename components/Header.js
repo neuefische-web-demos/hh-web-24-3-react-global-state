@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export default function Header() {
-  const countSum = '⚠️';
+  const countSum = '📦';
 
   return (
     <Link href="/">

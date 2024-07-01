@@ -18,7 +18,6 @@ export default function CountersPage() {
       <List>
         <Counter animalName="Cats" />
         <Counter animalName="Dogs" />
-        <Counter animalName="Sheep" />
         <Counter animalName="Dragons" />
       </List>
       <Link href="/">← Back to HomePage</Link>
