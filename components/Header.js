@@ -1,27 +1,22 @@
-import styled from "styled-components";
-import Link from "next/link";
+import styled from 'styled-components';
+import Link from 'next/link';
 
-const Title = styled.h1`
+const StyledTitle = styled.h1`
   font-size: 1rem;
   margin: 0;
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: #fff;
-`;
-
 export default function Header() {
-  const countSum = "???";
+  const countSum = '⚠️';
   return (
-    <Title>
-      <StyledLink href="/">
+    <StyledTitle>
+      <Link href="/">
         CounterApp
         <span role="img" aria-label="trademark">
           ™
-        </span>{" "}
+        </span>
         — currently counting <strong>{countSum}</strong> things.
-      </StyledLink>
-    </Title>
+      </Link>
+    </StyledTitle>
   );
 }

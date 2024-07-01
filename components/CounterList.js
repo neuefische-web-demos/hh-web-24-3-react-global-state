@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Counter from "./Counter";
+import styled from 'styled-components';
+import Counter from './Counter';
 
 const List = styled.ul`
   display: flex;
@@ -15,10 +15,10 @@ export default function CounterList() {
     <>
       <h2>Counters</h2>
       <List>
-        <Counter animalName={"Cats"} />
-        <Counter animalName={"Dogs"} />
-        <Counter animalName={"Sheep"} />
-        <Counter animalName={"Dragons"} />
+        <Counter animalName="Cats" />
+        <Counter animalName="Dogs" />
+        <Counter animalName="Sheep" />
+        <Counter animalName="Dragons" />
       </List>
     </>
   );

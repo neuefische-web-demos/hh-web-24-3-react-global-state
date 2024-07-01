@@ -1,18 +1,11 @@
-import InfoBox from "../components/InfoBox";
-import Navigation from "../components/Navigation";
-import CounterList from "../components/CounterList";
-import Link from "../components/Link";
+import CounterList from '../components/CounterList';
+import Link from 'next/link';
 
 export default function CountersPage() {
   return (
     <>
-      <Link href="/">← Back</Link>
-
       <CounterList />
-
-      <InfoBox />
-
-      <Navigation />
+      <Link href="/">← Back to HomePage</Link>
     </>
   );
 }
