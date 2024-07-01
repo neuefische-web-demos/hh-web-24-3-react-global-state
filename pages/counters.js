@@ -13,7 +13,7 @@ const List = styled.ul`
 
 export default function CountersPage() {
   return (
-    <>
+    <main>
       <h1>List of all counters</h1>
       <List>
         <Counter animalName="Cats" />
@@ -22,6 +22,6 @@ export default function CountersPage() {
         <Counter animalName="Dragons" />
       </List>
       <Link href="/">← Back to HomePage</Link>
-    </>
+    </main>
   );
 }

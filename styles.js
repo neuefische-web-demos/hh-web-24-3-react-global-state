@@ -4,8 +4,7 @@ export default createGlobalStyle`
 
 :root {
   --primary-color: #252629;
-  --primary-background: #f3f5f9;
-
+  --primary-background: #e4e7ees;
   --accent-color: #ff4a11;
 }
 
@@ -16,8 +15,12 @@ export default createGlobalStyle`
   }
 
   body {
-    margin: 0;
     font-family: system-ui;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    background-color: var(--primary-background);
+  }
+
+  main {
+    padding: 20px;
   }
 `;

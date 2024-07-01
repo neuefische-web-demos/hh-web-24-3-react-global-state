@@ -6,7 +6,7 @@ export default function HomePage() {
   const dragonCount = '⚠️';
 
   return (
-    <>
+    <main>
       <h1>Counter Stats</h1>
       <ul>
         <li>
@@ -20,6 +20,6 @@ export default function HomePage() {
         </li>
       </ul>
       <Link href="/counters">To the counters →</Link>
-    </>
+    </main>
   );
 }
