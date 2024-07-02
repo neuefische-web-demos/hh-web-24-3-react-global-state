@@ -1,12 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 
-const StyledContainer = styled.li`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-`;
-
 export default function Counter({ animalName }) {
   // local counter state
 
@@ -37,3 +31,9 @@ export default function Counter({ animalName }) {
     </StyledContainer>
   );
 }
+
+const StyledContainer = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`;
