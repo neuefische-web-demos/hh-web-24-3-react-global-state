@@ -2,15 +2,6 @@ import Counter from '@/components/Counter';
 import Link from 'next/link';
 import styled from 'styled-components';
 
-const List = styled.ul`
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  margin: 0;
-  padding: 0 0 1rem 0;
-  gap: 1rem;
-`;
-
 export default function CountersPage() {
   return (
     <main>
@@ -24,3 +15,12 @@ export default function CountersPage() {
     </main>
   );
 }
+
+const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1rem 0;
+  gap: 1rem;
+`;
