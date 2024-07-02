@@ -17,7 +17,7 @@ export default function Counter({ animalName }) {
   }
 
   function handleSubtract() {
-    setCount(Math.max(0, count - 1));
+    setCount(count - 1);
   }
 
   return (
