@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
-export default function HomePage({ countAverage = '📦', countSum = '📦', dragons = '📦' }) {
+export default function HomePage({ animals, countAverage, animalSum, dragonCount }) {
+  console.log('HOMEPAGE', animals);
   return (
     <main>
       <h1>Counter Stats</h1>
@@ -9,10 +10,10 @@ export default function HomePage({ countAverage = '📦', countSum = '📦', dra
           average:<strong>{countAverage}</strong>
         </li>
         <li>
-          sum:<strong>{countSum}</strong>
+          sum:<strong>{animalSum}</strong>
         </li>
         <li>
-          dragons:<strong>{dragons}</strong>
+          dragons:<strong>{dragonCount}</strong>
         </li>
       </ul>
       <Link href="/counters">To the counters →</Link>

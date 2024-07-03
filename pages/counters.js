@@ -2,14 +2,14 @@ import Counter from '@/components/Counter';
 import Link from 'next/link';
 import styled from 'styled-components';
 
-export default function CountersPage() {
+export default function CountersPage({ animals, onAdd, onSubtract }) {
   return (
     <main>
       <h1>List of all counters</h1>
       <List>
-        <Counter animalName="Cats" />
-        <Counter animalName="Dogs" />
-        <Counter animalName="Dragons" />
+        {animals.map((animal) => (
+          <Counter key={animal.id} animal={animal} onAdd={onAdd} onSubtract={onSubtract} />
+        ))}
       </List>
       <Link href="/">← Back to HomePage</Link>
     </main>
